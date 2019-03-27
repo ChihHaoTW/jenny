@@ -6,6 +6,8 @@ import Fab from '@material-ui/core/Fab';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+import Main from './Main/Main';
+
 class App extends Component {
   state = {
     anchorEl: null,
@@ -56,6 +58,8 @@ class App extends Component {
 					})}
         </Menu>
         <Logo id="logo" />
+
+				<Main />
 
       </div>
     )
