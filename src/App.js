@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { ReactComponent as Logo } from './img/logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import Fab from '@material-ui/core/Fab';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 import Main from './Main/Main';
 
@@ -32,37 +34,47 @@ class App extends Component {
   render() {
     const { anchorEl } = this.state
     return (
-      <div className="App">
-        <Fab
-          id="fab"
-					className={anchorEl ? 'hidden' : null}
-          aria-owns={anchorEl ? 'menu' : undefined}
-          aria-haspopup="true"
-          onClick={this.handleClick}
-        >
-          <MenuIcon />
-        </Fab>
-       <Menu
-          id="menu"
-          anchorEl={anchorEl}
-          open={Boolean(anchorEl)}
-          onClose={this.handleClose}
-					MenuListProps={{className: "bk2"}}
-        >
-					{ this.state.menuList.map( (e, i) => {
-						return <MenuItem
-              key={i}
-							className={"menu-item"} 
-							onClick={this.handleClose}>
-								{e}
-						</MenuItem>
-					})}
-        </Menu>
-        <Logo id="logo" />
+      <Router>
+        <div className="App">
+          <Fab
+            id="fab"
+			  		className={anchorEl ? 'hidden' : null}
+            aria-owns={anchorEl ? 'menu' : undefined}
+            aria-haspopup="true"
+            onClick={this.handleClick}
+          >
+            <MenuIcon />
+          </Fab>
+         <Menu
+            id="menu"
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={this.handleClose}
+			  		MenuListProps={{className: "bk2"}}
+          >
+			  		{ this.state.menuList.map( (e, i) => {
+			  			return <MenuItem
+                key={i}
+			  				className={"menu-item"} 
+			  				onClick={this.handleClose}>
+			  					{e}
+			  			</MenuItem>
+			  		})}
+          </Menu>
 
-				<Main />
+          <ButtonBase 
+            component={Link}
+            to="/"
+            disableRipple={true}
+            disableTouchRipple={true}
+          >
+            <Logo id="logo" />
+          </ButtonBase>
 
-      </div>
+          <Route exact path="/" component={Main} />
+
+        </div>
+      </Router>
     )
   }
 }
