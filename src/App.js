@@ -49,8 +49,9 @@ class App extends Component {
           onClose={this.handleClose}
 					MenuListProps={{className: "bk2"}}
         >
-					{ this.state.menuList.map( e => {
+					{ this.state.menuList.map( (e, i) => {
 						return <MenuItem
+              key={i}
 							className={"menu-item"} 
 							onClick={this.handleClose}>
 								{e}
