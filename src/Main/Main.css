@@ -4,6 +4,39 @@
 }
 
 .paper {
-  background-color: red;
+  background-color: #A01F36 !important;
+  border-radius: 0px !important;
+  height: 30vmin;
+  min-height: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.paper > a {
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 5%;
+  transition: .2s;
+}
+
+.paper > a > div:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* ratio of 1:1*/
+}
+
+.paper > a > div {
+  height: 100%;
+  width: 100%;
+}
+
+.paper > a:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.29);
 }
 

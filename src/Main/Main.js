@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import InstagramEmbed from 'react-instagram-embed';
 import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import CardMedia from '@material-ui/core/CardMedia';
 import './Main.css';
+
+import img1 from './img/1.jpg';
+import img2 from './img/2.jpg';
+import img3 from './img/3.jpg';
+import img4 from './img/4.jpg';
 
 class Main extends Component {
   render() {
@@ -15,12 +21,19 @@ class Main extends Component {
 			/>
 
       <Paper className="paper" elevation={1}>
-        <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
-        </Typography>
+				<Link to="test">
+					<CardMedia image={img1} />
+				</Link>
+				<Link to="test">
+					<CardMedia image={img2} />
+				</Link>
+				<Link to="test">
+					<CardMedia image={img3} />
+				</Link>
+				<Link to="test">
+					<CardMedia image={img4} />
+				</Link>
+
       </Paper>
 
 		</div>
