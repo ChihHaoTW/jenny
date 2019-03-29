@@ -7,8 +7,12 @@ import Fab from '@material-ui/core/Fab';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import SvgIcon from '@material-ui/core/SvgIcon';
+import IconButton from '@material-ui/core/IconButton';
 
 import Main from './Main/Main';
+
+import FbIcon from './img/bottom/fb.png';
 
 class App extends Component {
   state = {
@@ -82,6 +86,11 @@ class App extends Component {
             <Logo id="logo" />
           </ButtonBase>
           <p className="logo-text">專剋現代社會亂象青草茶舖</p>
+
+          <IconButton>
+            <img src={FbIcon} />
+            <img src={FbIcon} />
+          </IconButton>
 
         </div>
       </Router>
