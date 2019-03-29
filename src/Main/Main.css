@@ -1,4 +1,9 @@
 
+.intro {
+  margin-top:    13vh;
+  margin-bottom: 13vh;
+}
+
 .paper {
   background-color: #A01F36 !important;
   border-radius: 0px !important;
@@ -40,14 +45,14 @@
 
 .news {
   margin-top: 10vh;
-  margin-left:  35vw;
-  margin-right: 35vw;
+  margin-left:  40vw;
+  margin-right: 40vw;
   padding: 10px;
   background-color: #A01F36 !important;
 }
 
 .news > h3 {
-  font-size: 5vw;
+  font-size: 3vw;
   color: white;
 }
 

@@ -15,6 +15,19 @@ class Main extends Component {
   render() {
 		return <div id="Main">
 
+			<div className="intro">
+        <Typography variant="subtitle1" component="p">
+					辟魍是專剋社會亂象青草茶舖，將社會亂象比喻為魑魅魍魎
+				</Typography>
+        <Typography variant="subtitle1" component="p">
+					而青草茶比喻為符水，以對抗不同族群所需功效為配方
+				</Typography>
+        <Typography variant="subtitle1" component="p">
+					透過詼諧諷刺的符咒再設計包裝青草茶、茶磚、茶包等商品。
+				</Typography>
+				
+			</div>
+
       <Paper className="paper" elevation={1}>
 				<Link to="test">
 					<CardMedia image={img1} />
