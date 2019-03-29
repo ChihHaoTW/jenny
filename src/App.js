@@ -73,6 +73,16 @@ class App extends Component {
 
           <Route exact path="/" component={Main} />
 
+          <ButtonBase 
+            component={Link}
+            to="/"
+            disableRipple={true}
+            disableTouchRipple={true}
+          >
+            <Logo id="logo" />
+          </ButtonBase>
+          <p className="logo-text">專剋現代社會亂象青草茶舖</p>
+
         </div>
       </Router>
     )
