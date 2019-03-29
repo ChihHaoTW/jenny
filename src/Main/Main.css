@@ -6,10 +6,12 @@
 .paper {
   background-color: #A01F36 !important;
   border-radius: 0px !important;
-  height: 30vmin;
-  min-height: 100px;
+  height: 25vmin;
+  min-height: 50px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 1%;
+  padding-bottom: 1%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,7 +22,7 @@
   flex-grow: 1;
   overflow: hidden;
   border-radius: 50%;
-  margin: 5%;
+  margin: 7%;
   transition: .2s;
 }
 
