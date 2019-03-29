@@ -12,7 +12,11 @@ import IconButton from '@material-ui/core/IconButton';
 
 import Main from './Main/Main';
 
-import FbIcon from './img/bottom/fb.png';
+import fb     from './img/bottom/fb.png';
+import ig     from './img/bottom/ig.png';
+import shopee from './img/bottom/shopee.png';
+import mail   from './img/bottom/mail.png';
+import sheet  from './img/bottom/sheet.png';
 
 class App extends Component {
   state = {
@@ -87,10 +91,23 @@ class App extends Component {
           </ButtonBase>
           <p className="logo-text">專剋現代社會亂象青草茶舖</p>
 
-          <IconButton>
-            <img src={FbIcon} />
-            <img src={FbIcon} />
-          </IconButton>
+          <div className="bottom">
+            <IconButton>
+              <img className="bottom-icon" src={fb} />
+            </IconButton>
+            <IconButton>
+              <img className="bottom-icon" src={ig} />
+            </IconButton>
+            <IconButton>
+              <img className="bottom-icon" src={shopee} />
+            </IconButton>
+            <IconButton>
+              <img className="bottom-icon" src={mail} />
+            </IconButton>
+            <IconButton>
+              <img className="bottom-icon" src={sheet} />
+            </IconButton>
+          </div>
 
         </div>
       </Router>

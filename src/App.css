@@ -56,6 +56,22 @@ p.logo-text {
   color: white !important;
 }
 
+.bottom {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: space-around;
+}
+
+.bottom > button {
+}
+
+.bottom-icon {
+  width: 8vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
