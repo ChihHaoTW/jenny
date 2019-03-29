@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import InstagramEmbed from 'react-instagram-embed';
 import Paper from '@material-ui/core/Paper';
 import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 import './Main.css';
 
 import img1 from './img/1.jpg';
@@ -13,12 +14,6 @@ import img4 from './img/4.jpg';
 class Main extends Component {
   render() {
 		return <div id="Main">
-			<InstagramEmbed
-			  url='https://www.instagram.com/p/BvdPaOqHQDu/'
-			  hideCaption={false}
-			  containerTagName='div'
-			  injectScript
-			/>
 
       <Paper className="paper" elevation={1}>
 				<Link to="test">
@@ -35,6 +30,20 @@ class Main extends Component {
 				</Link>
 
       </Paper>
+
+			<Paper className="news" elevation={1}>
+        <Typography variant="h4" component="h3">
+					NEWS
+        </Typography>
+      </Paper>
+
+			<InstagramEmbed
+			  url='https://www.instagram.com/p/BvdPaOqHQDu/'
+			  hideCaption={false}
+			  containerTagName='div'
+			  injectScript
+			/>
+
 
 		</div>
   }
