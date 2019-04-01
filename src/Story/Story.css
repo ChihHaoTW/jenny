@@ -1,0 +1,24 @@
+
+.intro h4 {
+  margin-bottom: 10vh;
+}
+
+img.center.wide {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+img.center.normal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+img.center.narrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
