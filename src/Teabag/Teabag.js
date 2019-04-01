@@ -35,7 +35,7 @@ class Teabag extends Component {
         </Typography>
       </div>
 
-      <img src={img1} className="center normal" />
+      <img src={img1} className="img center normal" />
 
       <div className="img two-img-con">
         <img src={img2} />
