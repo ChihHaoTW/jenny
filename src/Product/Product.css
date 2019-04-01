@@ -1,0 +1,13 @@
+
+#Product > .intro {
+  margin-bottom: 5vh;
+}
+
+#Product div.two-img-con > img:first-child{
+  width: 55%;
+}
+
+#Product div.two-img-con > img:nth-child(2){
+  width: 34.8%;
+}
+
