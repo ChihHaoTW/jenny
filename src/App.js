@@ -105,19 +105,19 @@ class App extends Component {
           <p className="logo-text">專剋現代社會亂象青草茶舖</p>
 
           <div className="bottom">
-            <IconButton>
+            <IconButton target="_blank" href="https://www.facebook.com/%E8%BE%9F%E9%AD%8D-%E5%B0%88%E5%89%8B%E7%A4%BE%E6%9C%83%E4%BA%82%E8%B1%A1%E9%9D%92%E8%8D%89%E8%8C%B6%E8%88%96-825105324505437/">
               <img className="bottom-icon" src={fb} />
             </IconButton>
-            <IconButton>
+            <IconButton target="_blank" href="https://www.instagram.com/be.won_unevildrinks/">
               <img className="bottom-icon" src={ig} />
             </IconButton>
-            <IconButton>
+            <IconButton target="_blank" href="https://shopee.tw/bewon_unevildrink">
               <img className="bottom-icon" src={shopee} />
             </IconButton>
-            <IconButton>
+            <IconButton target="_top" href="mailto:biizii4biizii@gmail.com">
               <img className="bottom-icon" src={mail} />
             </IconButton>
-            <IconButton>
+            <IconButton target="_blank" href="https://goo.gl/forms/Hhrc3sFP7KVDiLpz2">
               <img className="bottom-icon" src={sheet} />
             </IconButton>
           </div>
