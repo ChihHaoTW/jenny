@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Font';
+  src: url('./DFNMing-XB-HK-BF.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+.App * {
+  font-family: 'Font' !important;
+}
+
 .App {
   text-align: center;
 }

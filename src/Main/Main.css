@@ -7,7 +7,7 @@
 .paper {
   background-color: #A01F36 !important;
   border-radius: 0px !important;
-  height: 25vmin;
+  height: 25vh;
   min-height: 50px;
   padding-left: 30px;
   padding-right: 30px;
@@ -23,7 +23,7 @@
   flex-grow: 1;
   overflow: hidden;
   border-radius: 50%;
-  margin: 6%;
+  margin: calc(8vw - 20px);
   transition: .2s;
 }
 
