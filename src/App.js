@@ -9,8 +9,13 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import IconButton from '@material-ui/core/IconButton';
 
-import Main  from './Main/Main';
-import Story from './Story/Story';
+import Main     from './Main/Main';
+import Story    from './Story/Story';
+import Teabag   from './Teabag/Teabag';
+import Teabrick from './Teabrick/Teabrick';
+import Herbtea  from './Herbtea/Herbtea';
+import Charm    from './Charm/Charm';
+import Product  from './Product/Product';
 
 import fb     from './img/bottom/fb.png';
 import ig     from './img/bottom/ig.png';
@@ -82,7 +87,12 @@ class App extends Component {
           </ButtonBase>
 
           <Route exact path="/" component={Main} />
-          <Route path="/story/" component={Story} />
+          <Route exact path="/story/" component={Story} />
+          <Route exact path="/teabag/" component={Teabag} />
+          <Route exact path="/teabrick/" component={Teabrick} />
+          <Route exact path="/herbtea/" component={Herbtea} />
+          <Route exact path="/charm/" component={Charm} />
+          <Route exact path="/product/" component={Product} />
 
           <ButtonBase 
             component={Link}
