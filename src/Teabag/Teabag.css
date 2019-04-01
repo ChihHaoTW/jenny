@@ -6,3 +6,37 @@
   margin-bottom: 5vh;
 }
 
+.img > img {
+  height: 100%;
+}
+
+div.img {
+  margin-top:    10vh;
+  margin-bottom: 10vh;
+}
+
+div.two-img-con {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.two-img-con > img {
+  width: 40%;
+}
+
+div.left-img-con {
+  text-align: left;
+}
+
+div.left-img-con > img {
+  width: 70%;
+}
+
+div.right-img-con {
+  text-align: right;
+}
+
+div.right-img-con > img {
+  width: 70%;
+}
+

@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import Typography from '@material-ui/core/Typography';
 import './Teabag.css';
 
+import img1 from './img/1.jpg';
+import img2 from './img/2.jpg';
+import img3 from './img/3.jpg';
+import img4 from './img/4.jpg';
+import img5 from './img/5.jpg';
+import img6 from './img/6.jpg';
+import img7 from './img/7.jpg';
+
 class Teabag extends Component {
   render() {
 		return <div id="Teabag">
@@ -27,7 +35,28 @@ class Teabag extends Component {
         </Typography>
       </div>
 
+      <img src={img1} className="center normal" />
 
+      <div className="img two-img-con">
+        <img src={img2} />
+        <img src={img3} />
+      </div>
+
+      <div className="img left-img-con">
+        <img src={img4} />
+      </div>
+
+      <div className="img right-img-con">
+        <img src={img5} />
+      </div>
+
+      <div className="img left-img-con">
+        <img src={img6} />
+      </div>
+
+      <div className="img right-img-con">
+        <img src={img7} />
+      </div>
 
 		</div>
   }
