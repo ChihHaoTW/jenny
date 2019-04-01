@@ -29,16 +29,16 @@ class Main extends Component {
 			</div>
 
       <Paper className="paper" elevation={1}>
-				<Link to="test">
+        <Link to="/charm/">
 					<CardMedia image={img1} />
 				</Link>
-				<Link to="test">
+        <Link to="/teabag/">
 					<CardMedia image={img2} />
 				</Link>
-				<Link to="test">
+        <Link to="/teabrick/">
 					<CardMedia image={img3} />
 				</Link>
-				<Link to="test">
+        <Link to="/herbtea/">
 					<CardMedia image={img4} />
 				</Link>
 
