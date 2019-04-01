@@ -10,7 +10,8 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import IconButton from '@material-ui/core/IconButton';
 
-import Main from './Main/Main';
+import Main  from './Main/Main';
+import Story from './Story/Story';
 
 import fb     from './img/bottom/fb.png';
 import ig     from './img/bottom/ig.png';
@@ -22,12 +23,12 @@ class App extends Component {
   state = {
     anchorEl: null,
 		menuList: [
-			'品牌故事',
-			'茶包',
-			'茶磚',
-			'青草茶',
-			'符咒',
-			'周邊商品'
+      {zh: '品牌故事', en: 'story'}, 
+      {zh: '茶包',     en: 'teabag'},
+      {zh: '茶磚',     en: 'teabrick'},
+      {zh: '青草茶',   en: 'herbtea'},
+      {zh: '符咒',     en: 'charm'},
+      {zh: '周邊商品', en: 'product'}
 		]
   }
 
@@ -62,10 +63,12 @@ class App extends Component {
           >
 			  		{ this.state.menuList.map( (e, i) => {
 			  			return <MenuItem
+                component={Link}
+                to={`/${e.en}/`}
                 key={i}
 			  				className={"menu-item"} 
 			  				onClick={this.handleClose}>
-			  					{e}
+			  					{e.zh}
 			  			</MenuItem>
 			  		})}
           </Menu>
@@ -80,6 +83,7 @@ class App extends Component {
           </ButtonBase>
 
           <Route exact path="/" component={Main} />
+          <Route path="/story/" component={Story} />
 
           <ButtonBase 
             component={Link}
