@@ -51,7 +51,7 @@ class Main extends Component {
       </Paper>
 
 			<InstagramEmbed
-			  url='https://www.instagram.com/p/BvdPaOqHQDu/'
+        url='https://www.instagram.com/p/BvtsxV_nT1J/'
 			  hideCaption={false}
 			  containerTagName='div'
 			  injectScript
