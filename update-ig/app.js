@@ -8,8 +8,7 @@ app.use(bodyParser())
 app.use(express.static('public'))
 
 app.post('/update', (req, res) => {
-  // console.log(req.body.con)
-  fs.writeFileSync("./url.json", JSON.stringify({text: req.body.con}))
+  fs.writeFileSync("./url.txt", req.body.con)
 
   res.send("done!")
 })
