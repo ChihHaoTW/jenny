@@ -11,6 +11,8 @@ import img2 from './img/2.jpg';
 import img3 from './img/3.jpg';
 import img4 from './img/4.jpg';
 
+import url from './url.txt';
+
 class Main extends Component {
   render() {
 		return <div id="Main">
@@ -51,7 +53,7 @@ class Main extends Component {
       </Paper>
 
 			<InstagramEmbed
-        url='https://www.instagram.com/p/BvtsxV_nT1J/'
+        url={url}
 			  hideCaption={false}
 			  containerTagName='div'
 			  injectScript
