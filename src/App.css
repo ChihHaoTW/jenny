@@ -20,7 +20,6 @@
 #logo {
   margin-top: 30px;
   height: calc(100px + 10vmin);
-  width: 100%;
 }
 
 p.logo-text {
@@ -32,6 +31,7 @@ p.logo-text {
   position: fixed;
   top: 30px;
   right: 30px;
+  z-index: 1;
 }
 
 .App-header {
