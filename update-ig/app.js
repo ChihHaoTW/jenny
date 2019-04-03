@@ -1,4 +1,5 @@
 var fs = require('fs')
+var child_process = require('child_process')
 var express = require('express')
 var bodyParser = require('body-parser')
 var app = express()
@@ -9,7 +10,7 @@ app.use(express.static('public'))
 
 app.post('/update', (req, res) => {
   fs.writeFileSync("./url.txt", req.body.con)
-
+  child_process.execSync('yarn run build')
   res.send("done!")
 })
 
